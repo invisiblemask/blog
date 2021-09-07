@@ -1,0 +1,83 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.register-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffff;
+    /*width: 100%;*/
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+
+.register-cover h2 {
+    margin-top: 20px;
+    font-weight: 900;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.register-cover form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.register-cover input {
+    width: 400px;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #eef0f1;
+}
+
+.register-cover button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    background-color: #090df5;
+    color: #ffff;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-cover button:hover {
+    background-color: #0609b6;
+}
+
+.register-form span {
+    align-self: center;
+}
+
+@media screen and (max-width: 720px) {
+    .register-cover {
+        margin-top: 60px;
+        margin-right: 23px;
+        border: none;
+        width: 80%;
+    }
+
+    .register {
+        background-color: #ffff;
+    }
+    
+    .register-cover form{
+        width: 100%;
+    }
+
+    .register-cover input{
+        width: 100%;
+    }
+}

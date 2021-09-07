@@ -1,0 +1,120 @@
+.setting-form-cover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.setting-form-cover form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-header {
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 627px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
+    border: 1px solid #c0c0c0;
+}
+
+.setting-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffff;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+
+.setting-form label {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.setting-form input {
+    margin-bottom: 40px;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    border: none;
+    outline: none;
+    align-items: center;
+    background-color: #f7f5f5;
+}
+
+.setting-submit {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    background-color: #ffff;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+
+.setting-submit button {
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+    background-color: #0f999e;
+    color: #ffff;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.setting-pp {
+    display: flex;
+    margin-top: 5px;
+}
+
+.setting-pp > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.setting-pp input {
+    padding: 10px;
+    background-color: #f7f5f5;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .setting-form {
+        margin: 0 10px;
+        width: 80%;
+    }
+
+    .setting-header {
+        margin-top: 80px;
+        width: 330px;
+    }
+
+    .setting-submit {
+        width: 80%;
+    }
+
+}

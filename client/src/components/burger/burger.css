@@ -1,0 +1,104 @@
+.burger {
+    display: none;
+}
+
+.bg {
+    display: none;
+}
+
+.burger_sidebar-btn button{
+    background-color: #0f0e0e;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #ffff;
+    margin-left: 60px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.burger_sidebar-links {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    
+    .burger {
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        top: 20px;
+        left: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column nowrap;
+    }
+
+    .burger > div {
+        width: 1.8rem;
+        height: 0.2rem;
+        background-color: #0f0e0e;
+        border-radius: 20px;
+    }
+
+    
+    .bg {
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        top: 20px;
+        left: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column nowrap;
+        z-index: 100;
+    }
+
+    .bg > div {
+        width: 1.8rem;
+        height: 0.2rem;
+        border-radius: 10px;
+        background-color: #202020;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+    }
+    
+    .bg > div:nth-child(1) {
+        transform: rotate(40deg);
+    }
+
+    .bg > div:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .bg > div:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    .sidebar ul {
+        flex-flow: column nowrap;
+        background-color: #0062bd;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50%;
+        padding-top: 3.5rem;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .sidebar li {
+        list-style: none;
+        color: #ffffff;
+        margin-left: 40px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    .burger_sidebar-links li:hover {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,6 @@
+.home {
+    display: flex;
+    background-color: #eef0f1;
+    height: 100%;
+    flex-wrap: wrap;
+}
